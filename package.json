@@ -1,0 +1,31 @@
+{
+  "name": "fallback-ethers-provider",
+  "version": "1.1.0",
+  "description": "extends ethers static json rpc provider with rpc pool and retry-times.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "author": "marvin_zhou",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jfzhou5/fallback-ethers-provider.git"
+  },
+  "scripts": {
+    "lint": "eslint . --ext .ts",
+    "prettier": "prettier  --write .",
+    "prettier:check": "prettier  --check .",
+    "build": "tsc",
+    "release": "tsc && npm publish"
+  },
+  "devDependencies": {
+    "@types/node": "^20.8.10",
+    "@typescript-eslint/eslint-plugin": "^6.9.1",
+    "@typescript-eslint/parser": "^6.9.1",
+    "eslint": "^8.53.0",
+    "prettier": "3.0.3",
+    "typescript": "^5.2.2"
+  },
+  "dependencies": {
+    "ethers": "^5.6.9"
+  }
+}
